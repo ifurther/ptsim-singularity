@@ -17,4 +17,6 @@ jobs:
 
     - name: Build contianer
       uses: ifurther/actions@master
+      with:
+        TOKEN: ${{ secrets.TOKEN }}
 
