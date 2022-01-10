@@ -25,5 +25,11 @@ jobs:
     - name: Build contianer
       uses: ifurther/actions@master
       with:
-        TOKEN: ${{ secrets.TOKEN }}
+        action-command: build
+    
+    - name: Build contianer
+      uses: ifurther/actions@master
+      with:
+        action-command: run
+
 
