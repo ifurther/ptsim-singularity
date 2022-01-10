@@ -1,0 +1,20 @@
+name: Build the singularity contianer
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+        - name: Checkout
+          users: actions/checkout@2
+
+        - name: Build contianer
+          users: ifurther/actions@master
+
