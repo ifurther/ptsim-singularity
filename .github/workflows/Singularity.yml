@@ -26,6 +26,7 @@ jobs:
       uses: ifurther/actions@master
       with:
         action-command: build
+        TOKEN:: ${{ secrets.GITHUB_TOKEN }}
     
     - name: Build contianer
       uses: ifurther/actions@master
